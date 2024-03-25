@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "to_kill_a_mockingbird.jpg",
+      "review": "The novel explores the irrationality of adult attitudes towards race and class in the Deep South of the 1930s.",
+      "totalPages": 281,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classic", "Social Issues", "Legal Drama"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 2,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "1984.jpg",
+      "review": "A dystopian social science fiction novel and cautionary tale about totalitarianism.",
+      "totalPages": 328,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political Fiction"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 3,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "pride_and_prejudice.jpg",
+      "review": "A romantic novel of manners focusing on the lives of the Bennet family.",
+      "totalPages": 279,
+      "rating": 4.7,
+      "category": "Romance",
+      "tags": ["Classic", "Regency Romance"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "bookId": 4,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "the_great_gatsby.jpg",
+      "review": "A portrayal of the Roaring Twenties and the American Dream's corruption.",
+      "totalPages": 218,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Classic", "Jazz Age", "Tragedy"],
+      "publisher": "Charles Scribner's Sons",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 5,
+      "bookName": "To the Lighthouse",
+      "author": "Virginia Woolf",
+      "image": "to_the_lighthouse.jpg",
+      "review": "An innovative work exploring themes of consciousness, time, and the nature of art.",
+      "totalPages": 209,
+      "rating": 4.4,
+      "category": "Fiction",
+      "tags": ["Modernist", "Stream of Consciousness"],
+      "publisher": "The Hogarth Press",
+      "yearOfPublishing": 1927
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Catcher in the Rye",
+      "author": "J. D. Salinger",
+      "image": "the_catcher_in_the_rye.jpg",
+      "review": "A controversial novel known for its themes of teenage angst, alienation, and rebellion.",
+      "totalPages": 277,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Bildungsroman"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    }
+  ]
+  
