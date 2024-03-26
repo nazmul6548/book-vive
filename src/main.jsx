@@ -12,6 +12,9 @@ import Mainlayout from './layout/Mainlayout';
 import ListedBook from './pages/ListedBook';
 import Pagestoread from './pages/Pagestoread';
 import Bookdetails from './pages/Bookdetails';
+import Readbook from './pages/Readbook';
+import Wishlist from './pages/Wishlist';
+import { ToastContainer } from 'react-toastify';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,8 +36,18 @@ const router = createBrowserRouter([
 
 
       {
-        path:"/listedbook",
-        element:<ListedBook></ListedBook>
+        path:'/listedbook',
+        element:<ListedBook></ListedBook>,
+        children:[
+          {
+            path:"readbook",
+            element:<Readbook></Readbook>
+          },
+          {
+            path:'wishlist',
+            element:<Wishlist></Wishlist>
+          }
+        ]
       },
       {
         path:"/pageread",
@@ -59,6 +72,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  
+    <ToastContainer />
   </React.StrictMode>,
 )

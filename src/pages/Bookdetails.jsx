@@ -1,14 +1,50 @@
+import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBook } from "../Utils";
+import { saveWishlist } from "../Utils/Wishlist";
 
 
+import 'react-toastify/dist/ReactToastify.css';
 
 function Bookdetails() {
+
+const [a,setA] = useState(true);
+
 const books = useLoaderData()
 const {bookId} =useParams()
 const idint =parseInt(bookId)
-console.log(books,bookId);
+
 const book =books.find(book => book.bookId === idint)
-console.log(book);
+
+
+
+
+const handleReadButton=(id)=>{
+  setA(true)
+    saveBook(id);
+    
+    setA(false)
+  
+    
+  
+}
+
+const handleWishlistButton=(id)=>{
+    if (a===false) {
+       toast.error("Already added read list")
+        return
+    }
+    
+     saveWishlist(id)
+     
+
+} 
+
+
+
+
   return (
     <div>
   <div className="hero min-h-screen  mt-10 ">
@@ -34,15 +70,16 @@ console.log(book);
       <p className="flex justify-between w-[90%] font-bold text-xl pb-2">Rating : <span>{book.rating}</span></p>
 
       <div className="mt-10">
-      <button className="btn btn-primary mr-5">Get Started</button>
-      <button className="btn btn-primary">Get Started</button>
+      <button onClick={() => handleReadButton(book)} className="btn bg-white hover:bg-[#23BE0A] hover:text-white font-bold p-5 mr-5">Read</button>
+      <button onClick={() => handleWishlistButton(book)} className="btn bg-[#50B1C9] font-bold text-white p-5">Wishlist</button>
       </div>
     </div>
   </div>
+  <ToastContainer />
+
 </div>
     </div>
   )
 }
 
 export default Bookdetails;
-
