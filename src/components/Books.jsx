@@ -9,7 +9,7 @@ function Books() {
         .then(res => res.json())
         .then(books => setBooks(books))
     },[])
-    console.log(books);
+    // console.log(books);
   return (
     <div className=" mt-12">
         <div className="flex justify-center">

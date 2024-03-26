@@ -20,6 +20,7 @@ function ListedBook() {
         </div>
         <Tabs></Tabs>
         <Outlet></Outlet>
+        
     </div>
   )
 }

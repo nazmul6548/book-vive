@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import Readcart from "./Readcart";
 
 function Tabs() {
@@ -26,7 +26,7 @@ function Tabs() {
         >
           <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
         </svg>
-        <span>Architecto</span>
+        <span>Read Book</span>
       </Link>
       <Link
         to={`wishlist`}
@@ -48,7 +48,7 @@ function Tabs() {
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
           <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
         </svg>
-        <span>Corrupti</span>
+        <span>Wishlist Book</span>
       </Link>
     </div>
   );

@@ -6,7 +6,6 @@ import { saveBook } from "../Utils";
 import { saveWishlist } from "../Utils/Wishlist";
 
 
-import 'react-toastify/dist/ReactToastify.css';
 
 function Bookdetails() {
 
@@ -38,7 +37,7 @@ const handleWishlistButton=(id)=>{
     }
     
      saveWishlist(id)
-     
+     setA(false)
 
 } 
 

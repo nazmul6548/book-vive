@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react"
+import { getWishlist } from "../Utils/Wishlist"
+import Wishcart from "../components/Wishcart"
 
 
 function Wishlist() {
+
+  const [wish,setWish]=useState([])
+  useEffect(() => {
+    const wishBook = getWishlist()
+    setWish(wishBook)
+  console.log(wishBook);
+  },[])
+  console.log(wish);
+
   return (
-    <div><h1>gdgffgh</h1></div>
+    <div>
+       {
+        wish.map((wish) => <Wishcart key={wish.bookId}  wish={wish}></Wishcart>)
+      }
+    </div>
   )
 }
 

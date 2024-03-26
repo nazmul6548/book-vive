@@ -1,26 +1,26 @@
 import { toast } from "react-toastify";
 
 export const getWishlist = () => {
-    let Wishlist = [] ;
-    const storedBook = localStorage.getItem('Wishlist');
-    if (storedBook) {
-        Wishlist =JSON.parse(storedBook)
+    let Wishlists = [] ;
+    const storedWish = localStorage.getItem('Wishlist');
+    if (storedWish) {
+        Wishlists =JSON.parse(storedWish)
     }
-    return Wishlist;
+    return Wishlists;
 }
 
 
 
 
-export const saveWishlist = (book,storageKey) => {
-    let Wishlist = getWishlist(storageKey)
-    const isExist = Wishlist.find(b => b.id===book.id)
+export const saveWishlist = (wish) => {
+    let Wishlists = getWishlist()
+    const isExist = Wishlists.find(b => b.bookId==wish.bookId)
 
     if(isExist) {
-        toast.success('Wishlist')
+       return toast.error('Wishlist')
     }else{
-    Wishlist.push(book)
-    localStorage.setItem('wishlist', JSON.stringify(Wishlist))
+    Wishlists.push(wish)
+    localStorage.setItem('wishlist', JSON.stringify(Wishlists))
     toast.success("Book already exists")
 }
 }
