@@ -3,7 +3,9 @@
 function ListedBook() {
   return (
     <div>
-        <h2>listed book</h2>
+        <div className="bg-[#1313130D] text-center py-10 rounded-xl">
+          <h1 className="text-5xl font-bold">Books</h1>
+        </div>
     </div>
   )
 }

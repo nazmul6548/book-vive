@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar"
 
 function Mainlayout() {
   return (
-    <div>
+    <div className="container m-auto my-5">
         <div>
         <Navbar></Navbar>
         

@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Mainlayout from './layout/Mainlayout';
 import ListedBook from './pages/ListedBook';
 import Pagestoread from './pages/Pagestoread';
+import Bookdetails from './pages/Bookdetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,8 +19,19 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home></Home>
+        element:<Home></Home>,
+        
       },
+      
+
+      {
+        path:"Book/:bookId" ,
+        element:<Bookdetails></Bookdetails>,
+        loader:() => fetch("../fake.json"),
+     },
+  
+
+
       {
         path:"/listedbook",
         element:<ListedBook></ListedBook>
@@ -36,8 +48,12 @@ const router = createBrowserRouter([
         path:"/list",
         element:<Home></Home>
       },
-    ]
+      
+    ],
+    
   },
+
+ 
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
