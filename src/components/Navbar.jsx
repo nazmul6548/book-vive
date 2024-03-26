@@ -23,9 +23,9 @@ function Navbar() {
 
         <NavLink to='/pageread' className={({isActive}) => isActive ? 'text-[#23BE0A] font-bold border-2 p-1 rounded-md border-[#23BE0A]' : 'font-bold'}>Page to Read</NavLink>
 
-        <NavLink to='/note' className={({isActive}) => isActive ? 'text-[#23BE0A] font-bold border-2 p-1 rounded-md border-[#23BE0A]' : 'font-bold'}>Notes</NavLink>   
+        <NavLink to='/note' className={({isActive}) => isActive ? 'text-[#23BE0A] font-bold border-2 p-1 rounded-md border-[#23BE0A]' : 'font-bold'}>Review</NavLink>   
 
-        <NavLink to='/list' className={({isActive}) => isActive ? 'text-[#23BE0A] border-2 p-1 rounded-md border-[#23BE0A] font-bold' : 'font-bold'}>Book List</NavLink> 
+        <NavLink to='/list' className={({isActive}) => isActive ? 'text-[#23BE0A] border-2 p-1 rounded-md border-[#23BE0A] font-bold' : 'font-bold'}>Top Book</NavLink> 
 
 
 
