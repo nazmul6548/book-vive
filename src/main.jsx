@@ -60,12 +60,12 @@ const router = createBrowserRouter([
       {
         path:"note",
         element:<Note></Note>,
-        loader:() => fetch("fake.json")
+        loader:() => fetch("./fake.json")
       },
       {
         path:"list",
         element:<Topbooks></Topbooks>,
-        loader:() => fetch("fake.json")
+        loader:() => fetch("./fake.json")
       },
       
     ],
