@@ -48,12 +48,12 @@ const handleWishlistButton=(id)=>{
     <div>
   <div className="hero min-h-screen  mt-10 ">
   <div className="hero-content flex-col lg:flex-row gap-16">
-    <div className="flex items-center w-[40%] bg-[#1313130D] ">
+    <div className="flex items-center md:w-[40%] bg-[#1313130D] ">
     
     <img src={book.image} className="max-w-sm rounded-lg shadow-2xl w-[100%]" />
    
     </div>
-    <div className="w-[60%]">
+    <div className="md:w-[60%]">
       <h1 className="text-5xl font-bold pb-6">{book.bookName}</h1>
       <p>By : {book.author}</p>
 
