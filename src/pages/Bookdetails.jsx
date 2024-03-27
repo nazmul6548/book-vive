@@ -32,7 +32,7 @@ const handleReadButton=(id)=>{
 
 const handleWishlistButton=(id)=>{
     if (a===false) {
-       toast.error("Already added read list")
+       toast.error("you have Already added read this book")
         return
     }
     

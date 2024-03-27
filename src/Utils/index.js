@@ -17,10 +17,10 @@ export const saveBook = (book,storageKey) => {
     const isExist = books.find(b => b.bookId===book.bookId)
 
     if(isExist) {
-        toast.success("Book already exists")
+        toast.success("Book added to read list")
     }else{
     books.push(book)
     localStorage.setItem('book', JSON.stringify(books))
-    toast.success("Book already exists")
+    toast.success("Book added to read list")
 }
 }

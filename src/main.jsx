@@ -16,10 +16,12 @@ import Wishlist from './pages/Wishlist';
 import { ToastContainer } from 'react-toastify';
 import Note from './pages/Note';
 import Topbooks from './pages/Topbooks';
+import ErrorPage from './components/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Mainlayout></Mainlayout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
