@@ -19,8 +19,9 @@ export const saveWishlist = (wish) => {
     if(isExist) {
        return toast.error('Wishlist')
     }else{
-    Wishlists.push(wish)
-    localStorage.setItem('wishlist', JSON.stringify(Wishlists))
+        const newdata = [...Wishlists,wish]
+    // Wishlists.push(wish)
+    localStorage.setItem('Wishlist', JSON.stringify(newdata))
     toast.success("Book added to wishlist")
 }
 }

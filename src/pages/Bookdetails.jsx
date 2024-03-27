@@ -48,7 +48,7 @@ const handleWishlistButton=(id)=>{
     <div>
   <div className="hero min-h-screen  mt-10 ">
   <div className="hero-content flex-col lg:flex-row gap-16">
-    <div className="flex items-center md:w-[40%] bg-[#1313130D] ">
+    <div className="flex items-center md:w-[100%] bg-[#1313130D]  justify-center py-20 px-20 rounded-xl">
     
     <img src={book.image} className="max-w-sm rounded-lg shadow-2xl w-[100%]" />
    
