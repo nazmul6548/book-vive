@@ -1,13 +1,15 @@
 
+import { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineContactPage } from "react-icons/md";
 import { TiGroup } from "react-icons/ti";
 
 function Readcart({book}) {
     console.log(book);
-    // const {review,image} = book;
+    
   return (
     <div>
+      
     <div className="card md:card-side  mb-5 shadow-xl hover:border hover:border-green-400  hover:bg-[#da9ece26] hover:text-black cursor-pointer border border-blue-400">
    <div className="bg-[#1313130d] p-10 ">
    <figure>
@@ -50,6 +52,7 @@ function Readcart({book}) {
       </div>
     </div>
   </div>
+    
   </div>
   )
   
